@@ -39,34 +39,49 @@ ul {
 
     /* FONTES */
     --font-main: "Sora", sans-serif;
-    --d-large: 4.5rem/130% 800 var(--font-main);
-    --d-medium: 2.5rem/130% 800 var(--font-main);
-    --d-small: 2rem/130% 700 var(--font-main);
+    --d-large: 800 4.5rem/130%  var(--font-main);
+    --d-medium: 800 2.5rem/130% var(--font-main);
+    --d-small: 800 2rem/130% var(--font-main);
 
     --font-secondary: "Roboto Mono", monospace;
-    --overline: 1rem/150% 700 var(--font-secondary);
+    --overline: 700 1rem/150% var(--font-secondary);
 
     --font-tertiary: "Roboto Flex", sans-serif;
-    --p-large: 1rem/150% 500 var(--font-tertiary);
-    --p-medium: 0.875rem/150% 500 var(--font-tertiary);
-    --p-small: 0.75rem/150% 500 var(--font-tertiary);
-    --l-medium: 1.25rem/150% 700 var(--font-tertiary);
-    --l-small: 1rem/150% 700 var(--font-tertiary);
+    --p-large: 500 1rem/150% var(--font-tertiary);
+    --p-medium: 500 0.875rem/150% var(--font-tertiary);
+    --p-small: 500 0.75rem/150% var(--font-tertiary);
+    --l-medium: 700 1.25rem/150% var(--font-tertiary);
+    --l-small: 700 1rem/150% var(--font-tertiary);
 }
 
 body {
-    background-color: var(--background-primary);
-    background-image: url(/assets/img/Shapes.png);
-    background-position: center;
+    background: 
+      linear-gradient(175deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 100%),
+      url(/assets/img/Shapes.png);
+      background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+  }
 
 .title-first {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    padding-block: 4.75rem;
+    margin-left: 7.5rem;
+    gap: .5rem;
     
-    h1 {
-        font-family: var(--content-primary);
+    & h1 {
+        font: var(--d-large);
+        color: var(--content-primary);
+        font-size: 1.5rem;
+        width: 7.6875rem;
+        height: 1.9375rem;
+        text-transform: uppercase;
     }
+}
+
+.container {
+    max-width: 1098px;
+    height: auto;
+    margin-inline: 8.375rem;
 }
