@@ -29,17 +29,59 @@
             <div class="questions">
                 <div class="items">
                     <img src="/assets/icons/question.svg" alt="">
-                    <span>Como funciona o sorteador de números?</span>
-                    <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+                    <div class="frames">   
+                        <span>Como funciona o sorteador de números?</span>
+                        <p>O sorteador utiliza um algoritmo de geração aleatória para criar <br> números dentro do intervalo especificado pelo usuário.</p>
+                    </div>
                 </div>
 
                 <div class="items">
                     <img src="/assets/icons/question.svg" alt="">
-                    <span>Posso escolher o intervalo dos números?</span>
-                    <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+                    <div class="frames">
+                        <span>Posso escolher o intervalo dos números?</span>
+                        <p>Sim, você pode definir os valores mínimo e máximo para o <br> intervalo dos números sorteados.</p>
+                    </div>
                 </div>
             </div>
-        </div> 
+        </div>
+        
+        <div class="content-form">
+            <div class="title-form">
+                <h3>Quero Sortear:</h3>
+                <p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+            </div>
+            
+            <form>
+                <div class="fields">
+                    <div class="numbers">
+                        <label for="field-1">NÚMEROS</label>
+                        <input type="text" name="field-1" 
+                        placeholder="2" required>
+                    </div>
+
+                    <div class="numbers">   
+                        <label for="field-2">DE</label>
+                        <input type="text" name="field-2"
+                        placeholder="1" required>
+                    </div>
+
+                    <div class="numbers">
+                        <label for="field-3">DE</label>
+                        <input type="text" name="field-3" 
+                        placeholder="100" required>
+                    </div>
+                </div>
+                    
+                <div class="option-toggle">
+                    <input type="checkbox" name="option">
+                    <label for="option" id="label-1">Não Repetir Números</label>
+                </div>
+                
+                <div class="button">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
     </main>
     <script src="scripts.js"></script>
 </body>

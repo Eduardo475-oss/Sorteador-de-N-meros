@@ -18,4 +18,79 @@
             }
         }
     }
+
+    .questions {
+        display: grid;
+        gap: 2rem;
+
+        margin-top: 2.375rem;
+
+        img {
+            align-self: flex-start;
+        }
+
+        .items {
+            display: flex;
+            gap: .5rem;
+             span {
+                font: var(--p-medium);
+                color: var(--content-brand);
+             }
+
+             p {
+                font: var(--p-small);
+                color: var(--content-secondary);
+             }
+
+             .frames {
+                flex-direction: column;
+             }
+        }
+    }
+
+    .content-form {
+        display: grid;
+        gap: 1rem;
+        .title-form {
+            height: 5rem;
+            flex-direction: column;
+            gap: .5rem;
+            h3 {
+                font: var(--p-large);
+                color: var(--content-primary);
+                text-transform: uppercase;
+            }
+
+            p {
+                font: var(--p-medium);
+                color: var(--content-secondary);
+            }
+        }
+    }
+    
+                form {
+                    display: grid;
+                    gap: .5rem;
+                   & .fields {
+                        display: flex;
+                        gap: .5rem;
+                       & .numbers {
+                            flex-direction: column;
+                            gap: 1rem;
+                            
+                            label {
+                                font: var(--l-small);
+                                color: var(--content-secondary);
+                            }
+                        }
+                    }
+            
+                    .option-toggle {
+                        #label-1 {
+                            font: var(--p-medium);
+                            color: var(--content-secondary);
+                        }
+                    }
+                }
+
 }
