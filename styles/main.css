@@ -154,6 +154,8 @@
                     padding: 10px 16px;
                     background-color: var(--background-secondary);
                     text-align: center;
+
+                    cursor: pointer;
                 }
 
                 .numbers input[type="number"]::-webkit-inner-spin-button {
@@ -162,6 +164,51 @@
 
                 input[type="number"] {
                     font: var(--d-small);
+                    color: var(--content-primary);
+                }
+
+                .number-before {
+                    width: 100px;
+                    height: 66px;
+                    background: var(--gradient-content);
+                    border-radius: .5rem;
+                    padding: 5px;
+                }
+
+                
+                .number-before:hover {
+                    background: var(--gradient-border);
+                }
+
+                .button-before {
+                    width: 492px;
+                    height: 66px;
+                    background: var(--gradient-content);
+                    border-radius: .5rem;
+                    padding: 5px;
+                }
+
+                .button-before:hover {
+                    background: var(--gradient-border);
+                }
+
+                .btn {
+                    width: 482px;
+                    height: 56px;
+
+                    display: flex;
+                    position: relative;
+                    background-color: var(--background-tertiary);
+                    border-radius: .5rem;
+                    padding: 16px;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    border: var(--gradient-content);
+
+                    cursor: pointer;
+
+                    font: var(--l-medium);
                     color: var(--content-primary);
                 }
 }
